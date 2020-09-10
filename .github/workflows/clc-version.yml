@@ -1,4 +1,4 @@
-name: SampleActionName
+name: CLCustomerVersion
 on:
   push:
     branches:
@@ -20,4 +20,4 @@ jobs:
       - name: Release
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: echo "Esto solo corre si hay un cambio en el cl-customer :D"
+        run: echo "Esto solo corre si hay un cambio en el CL-CUSTOMER :D"
