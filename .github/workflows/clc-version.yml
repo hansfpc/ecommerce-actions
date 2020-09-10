@@ -5,6 +5,7 @@ on:
       - master
     paths:
       - "packages/apps/cl-customer-webapp/**/*.js"
+      - "packages/apps/cl-customer-webapp/**/*.ts"
 
 jobs:
   release:

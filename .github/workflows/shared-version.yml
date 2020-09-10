@@ -5,6 +5,7 @@ on:
       - master
     paths:
       - "packages/libs/shared/**/*.js"
+      - "packages/libs/shared/**/*.ts"
 
 jobs:
   release:
