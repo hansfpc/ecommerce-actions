@@ -7,6 +7,9 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "dependencies": {
+    "@ecommerce/shared": "0.2.38"
+  },
   "keywords": [],
   "author": "",
   "license": "ISC"
