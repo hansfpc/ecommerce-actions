@@ -20,4 +20,4 @@ jobs:
       - name: Release
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: echo "Esto solo corre si hay un cambio en el CL-CUSTOMER :D"
+        run: node cl-customer-version.js

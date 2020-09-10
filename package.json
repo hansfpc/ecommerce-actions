@@ -1,0 +1,17 @@
+{
+  "name": "scripts",
+  "version": "1.0.0",
+  "build": 44,
+  "description": "",
+  "main": "cl-customer-version.js",
+  "scripts": {
+    "cl-version": "node cl-customer-version.js",
+    "shared-version": "node shared-version.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "semver": "^7.3.2"
+  }
+}
