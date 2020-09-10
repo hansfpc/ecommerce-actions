@@ -1,6 +1,6 @@
 ### OBJETIVOS BASICOS A CONSEGUIR 
 
-- [ ]  correr un action "hello world" con "echo blabla"
+- [x] correr un action "hello world" con "echo blabla"
 - [ ] correr un action "hello world" SOLO CUANDO HAGO CAMBIOS AL CL-CUSTOMER CON ARCHIVOS JS
 - [ ] correr un action "hello world" SOLO CUANDO LOS CAMBIOS DEL CL-CUSTOMER (JS) SON DENTRO DE LA CARPETA CL-CUSTOMER Y/O EN SUBCARPETAS ANIDADAS
 - [ ] correr el hello-world con archivos .ts, .tsx, .js, .jsx, .json
