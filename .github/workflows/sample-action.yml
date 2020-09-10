@@ -4,7 +4,7 @@ on:
     branches:
       - master
     paths:
-      - "packages/cl-customer-webapp/**/*.{ts,tsx,js,jsx,json}"
+      - "packages/cl-customer-webapp/**/*.js"
 
 jobs:
   release:
