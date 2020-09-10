@@ -5,7 +5,10 @@ on:
       - master
     paths:
       - "packages/libs/shared/**/*.js"
+      - "packages/libs/shared/**/*.jsx"
       - "packages/libs/shared/**/*.ts"
+      - "packages/libs/shared/**/*.tsx"
+      - "packages/libs/shared/**/*.json"
 
 jobs:
   release:
