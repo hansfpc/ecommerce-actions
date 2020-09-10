@@ -1,1 +1,1 @@
-console.log('demo typescript! :D')
+console.log('demo typescript! :(')
