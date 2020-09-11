@@ -6,7 +6,7 @@
   "main": "customer-release.js",
   "scripts": {
     "cl-version": "node customer-release.js",
-    "shared-version": "node shared-version.js"
+    "shared-version": "node shared-release.js"
   },
   "keywords": [],
   "author": "",
