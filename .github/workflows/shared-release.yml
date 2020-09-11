@@ -22,7 +22,7 @@ jobs:
       - name: Release
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: node shared-version.js
+        run: node shared-release.js
       - name: Commit files
         run: |
           git config --local user.email "action@github.com"
