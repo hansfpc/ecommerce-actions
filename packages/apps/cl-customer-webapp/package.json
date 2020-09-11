@@ -1,6 +1,6 @@
 {
   "name": "cl-customer-webapp",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "build": 50,
   "description": "",
   "main": "root-cl.js",
