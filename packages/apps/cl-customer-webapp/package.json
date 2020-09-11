@@ -1,6 +1,6 @@
 {
   "name": "cl-customer-webapp",
-  "version": "2.0.1",
+  "version": "2.0.3",
   "build": 50,
   "description": "",
   "main": "root-cl.js",
@@ -8,7 +8,7 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "dependencies": {
-    "@ecommerce/shared": "2.0.5"
+    "@ecommerce/shared": "2.0.17"
   },
   "keywords": [],
   "author": "",

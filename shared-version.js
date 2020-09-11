@@ -12,27 +12,22 @@ let sharedNewVersion = semver.inc(sharedFile.version, 'patch');
 let SICCurrentVersion = clcFile.dependencies["@ecommerce/shared"]
 let SICNewVersion = semver.inc(clcFile.dependencies["@ecommerce/shared"], 'patch');
 
-console.log('SHARED current version: ', sharedCurrentVersion)
-console.log('SHARED new version: ', sharedNewVersion)
-
-console.log('SIC current version: ', SICCurrentVersion)
-console.log('SIC new version: ', SICNewVersion)
-
-
-
 sharedFile.version = sharedNewVersion
 clcFile.dependencies["@ecommerce/shared"] = SICNewVersion
-
 
 fs.writeFile(sharedFileName, JSON.stringify(sharedFile, null, 2), function writeJSON(err) {
     if (err) return console.log(err);
     console.log('writing to ' + sharedFileName);
-    console.log('UPGRADED PACKAGE VERSION SUCCESSFULLY!')
 });
 
 fs.writeFile(clcFileName, JSON.stringify(clcFile, null, 2), function writeJSON(err) {
     if (err) return console.log(err);
-    console.log('writing to ' +  clcFileName + '@ecommerce/shared dependency');
-    console.log('UPGRADED PACKAGE (SIC) VERSION SUCCESSFULLY!')
+    console.log('writing to ' +  clcFileName + ' (@ecommerce/shared dependency)');
 });
 
+console.log('************************* UPDATE SUMMARY **************************')
+console.table([
+    { NAME: 'SHARED_PACKAGE', CURRENT_VERSION: sharedCurrentVersion, NEW_VERSION: sharedNewVersion },
+    { NAME: 'SIC_PACKAGE', CURRENT_VERSION: SICCurrentVersion, NEW_VERSION: SICNewVersion }
+])
+console.log('Note: SIC means << Shared(dependency) in Cl-customer package >>')
