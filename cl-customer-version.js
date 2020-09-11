@@ -3,7 +3,6 @@ const semver = require('semver')
 const fileName = './packages/apps/cl-customer-webapp/package.json'
 let file = require(fileName)
 
-// console.log(process.argv)
 let currentVersion = file.version;
 let newVersion = semver.inc(file.version, 'patch');
 
