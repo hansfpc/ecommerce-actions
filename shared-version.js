@@ -27,7 +27,6 @@ fs.writeFile(clcFileName, JSON.stringify(clcFile, null, 2), function writeJSON(e
 
 console.log('************************* UPDATE SUMMARY **************************')
 console.table([
-    { NAME: 'SHARED_PACKAGE', CURRENT_VERSION: sharedCurrentVersion, NEW_VERSION: sharedNewVersion },
-    { NAME: 'SIC_PACKAGE', CURRENT_VERSION: SICCurrentVersion, NEW_VERSION: SICNewVersion }
+    { NAME: '@ecommerce/shared (main)', CURRENT_VERSION: sharedCurrentVersion, NEW_VERSION: sharedNewVersion },
+    { NAME: '@ecommerce/shared (in B2C)', CURRENT_VERSION: SICCurrentVersion, NEW_VERSION: SICNewVersion }
 ])
-console.log('Note: SIC means << Shared(dependency) in Cl-customer package >>')

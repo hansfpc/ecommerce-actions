@@ -1,4 +1,4 @@
-name: CLCustomerVersion
+name: CustomerRelease
 on:
   push:
     branches:
@@ -22,7 +22,7 @@ jobs:
       - name: Release
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: node cl-customer-version.js
+        run: node customer-release.js
       - name: Commit files
         run: |
           git config --local user.email "action@github.com"

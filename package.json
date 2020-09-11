@@ -3,9 +3,9 @@
   "version": "1.0.0",
   "build": 44,
   "description": "",
-  "main": "cl-customer-version.js",
+  "main": "customer-release.js",
   "scripts": {
-    "cl-version": "node cl-customer-version.js",
+    "cl-version": "node customer-release.js",
     "shared-version": "node shared-version.js"
   },
   "keywords": [],

@@ -15,5 +15,5 @@ fs.writeFile(fileName, JSON.stringify(file, null, 2), function writeJSON(err) {
 
 console.log('************************* UPDATE SUMMARY **************************')
 console.table([
-    { NAME: 'CL_CUSTOMER_PACKAGE', CURRENT_VERSION: currentVersion, NEW_VERSION: newVersion },
+    { NAME: '@ecommerce/customer', CURRENT_VERSION: currentVersion, NEW_VERSION: newVersion },
 ])
