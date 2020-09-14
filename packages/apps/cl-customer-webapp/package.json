@@ -9,7 +9,7 @@
   },
   "dependencies": {
     "@ecommerce/shared": "2.0.27",
-    "react": "16.13.1"
+    "react": "19.13.1"
   },
   "keywords": [],
   "author": "",
